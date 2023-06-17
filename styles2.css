@@ -1,0 +1,28 @@
+body{
+    background:#dfdfe2;
+    
+}
+h1{
+    text-align:center;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    padding:30px;
+    color:#1b1b32;
+}
+.gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.image{
+    width:500px;
+    height:700px;
+    border:2px dotted #1b1b32;
+    border-radius:15px;
+    margin:10px;
+
+}
+.image:hover{
+    border:2px dotted rgb(20, 215, 237);
+}
