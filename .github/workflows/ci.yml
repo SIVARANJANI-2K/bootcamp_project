@@ -1,0 +1,25 @@
+
+name: HTML Project CI
+
+on:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Display project files
+        run: ls -la
+
+      - name: Validate HTML files exist
+        run: |
+          test -f gallery.html
+          test -f yourself.html
+          echo "HTML files verified successfully"
+
+      - name: Pipeline completed
+        run: echo "GitHub Actions executed successfully!"
